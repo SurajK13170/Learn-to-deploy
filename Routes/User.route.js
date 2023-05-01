@@ -15,7 +15,7 @@ userRoute.post('/ragister', async (req, res) => {
         bcrypt.hash(pass, 5, async (err, hash) => {
             const user = new UserModel({ email, name, age, pass: hash })
             user.save()
-            res.status(200).json({ 'msg': 'ragister successful' })
+            res.status(200).json({ 'msg': 'register successful' })
         })
     } catch (err) {
         res.status(500).json({ 'err': err.message })
