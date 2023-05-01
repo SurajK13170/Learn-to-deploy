@@ -1,4 +1,6 @@
 const mongoose = require('mongoose')
+const {cors} = require('cors')
+
 
 const userSchema = mongoose.Schema({
     name:{type:String, required:true},

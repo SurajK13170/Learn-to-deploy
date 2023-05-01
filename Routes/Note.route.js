@@ -3,6 +3,8 @@ const mongoose = require('mongoose')
 const { NoteModel } = require('../Model/Note.model')
 const jwt = require('jsonwebtoken')
 const bcrypt = require('bcrypt')
+const {cors} = require('cors')
+
 const { auth } = require('../MiddelWare/auth')
 
 const noteRoute = express.Router()

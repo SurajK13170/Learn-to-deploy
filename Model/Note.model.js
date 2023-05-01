@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+const {cors} = require('cors')
 
 const noteSchema = mongoose.Schema({
     title:{type:String, required:true},

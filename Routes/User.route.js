@@ -3,6 +3,9 @@ const mongoose = require('mongoose')
 const { UserModel } = require('../Model/User.model')
 const jwt = require('jsonwebtoken')
 const bcrypt = require('bcrypt')
+const {cors} = require('cors')
+
+
 
 const userRoute = express.Router()
 
